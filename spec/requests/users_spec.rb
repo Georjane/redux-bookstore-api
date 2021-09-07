@@ -2,6 +2,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Users API', type: :request do
+  let!(:name) { "sample name" }
   let(:user) { build(:user) }
   let(:headers) { valid_headers.except('Authorization') }
   let(:valid_attributes) do
